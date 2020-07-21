@@ -1,4 +1,4 @@
-package businessLogic
+package handlers
 
 import (
 	"database/sql"
@@ -167,4 +167,3 @@ func checkTransactionIsUniq(c *gin.Context, r model.Request, DB *sql.DB) bool {
 	}
 	return false
 }
-

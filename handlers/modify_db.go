@@ -1,4 +1,4 @@
-package businessLogic
+package handlers
 
 import (
 	"fmt"
@@ -96,5 +96,3 @@ func MakeDBCalculations(c *gin.Context) {
 		utils.LogCancels(loginfo)
 	}
 }
-
-

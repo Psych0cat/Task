@@ -6,6 +6,6 @@ all: build
 BUILD.go = $(GO) build -i
 all: build
 build:
-	$(GO) build $(MOD) Router/main.go
+	$(GO) build $(MOD) router/main.go
 
 

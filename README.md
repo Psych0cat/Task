@@ -23,6 +23,6 @@ All defaults are set to run the app and DB from the box on http://localhost:8080
 ## Tests:
  Current tests are end-to-end, without DB mocking, so app need to be up and running.
 
- `go test Router/main_test.go`
+ `go test router/main_test.go`
 
 

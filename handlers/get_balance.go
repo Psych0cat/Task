@@ -1,4 +1,4 @@
-package businessLogic
+package handlers
 
 import (
 	"database/sql"
@@ -49,4 +49,3 @@ func NullBalance(c *gin.Context) {
 	c.JSON(200, gin.H{
 		"balance": 0})
 }
-
