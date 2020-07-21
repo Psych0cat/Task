@@ -16,7 +16,6 @@ import (
 var AppPort = GetEnv("APP_PORT", "8080")
 var LogfileName = GetEnv("APP_LOGFILE", "testServ.log")
 var RequestLogs = GetEnv("REQ_LOGFILE", "requestlogs.log")
-var Duration = GetEnv("DB_UPDATE_TIME", "10")
 var RespLogs = GetEnv("RESP_LOGFILE", "resplogs.log")
 var PGHostname = GetEnv("POSTGRES_HOSTNAME", "db")
 var PGPort = GetEnv("POSTGRES_PORT", "5432")
@@ -25,6 +24,7 @@ var PGPassword = GetEnv("POSTGRES_PASSWORD", "docker")
 var PGDB = GetEnv("POSTGRES_DB", "transaction_queue")
 var CancelLog = GetEnv("CANCEL_LOGFILE", "cancellogs.log")
 var CancelRows = GetEnv("CANCEL_ROWS", "10")
+var Duration = GetEnv("DB_UPDATE_TIME", "10")
 
 func GetEnv(key, fallback string) string {
 	if value, ok := os.LookupEnv(key); ok {
@@ -155,4 +155,3 @@ func LogCancels(s string) {
 	log.SetOutput(f)
 	log.Println(s)
 }
-
