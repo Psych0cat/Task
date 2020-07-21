@@ -2,6 +2,7 @@
 
 ``` 
 git clone https://github.com/Psych0cat/Task.git
+cd Task
 docker-compose up --build
  ```
 ## EVN location:
