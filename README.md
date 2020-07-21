@@ -14,7 +14,7 @@ curl --location --request POST '0.0.0.0:8080/transaction' \
 --data-raw '{"state": "win", "amount": "10.15", "transactionId": "1k1"}'
 ``` 
 ## EVN location:
-All defaults are set to run the app and DB from the box.
+All defaults are set to run the app and DB from the box on http://localhost:8080.
 
 `.env.example`
 
