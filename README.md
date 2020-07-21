@@ -21,7 +21,7 @@ All defaults are set to run the app and DB from the box on http://localhost:8080
 ## Logs:
  Log files are inside the app container, see naming in .env.example
 ## Tests:
- Current tests are end-to-end, without DB mocking, so app need to be up and running.
+ Current tests are end-to-end, without DB mocking, so app needs to be up and running.
 
  `go test router/main_test.go`
 
