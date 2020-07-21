@@ -33,8 +33,7 @@ func SetupRouter() *gin.Engine {
 	Router.POST("/transaction", businessLogic.MakeTransaction)
 	Router.GET("/checkbalance", businessLogic.CheckBalance)
 	Router.GET("/nullbalance", businessLogic.NullBalance)
+	Router.GET("/", func(c *gin.Context) { c.JSON(200, gin.H{"Healthckeck": "OK"}) })
 	Router.Use(utils.RequestLogger())
 	return Router
 }
-
-
