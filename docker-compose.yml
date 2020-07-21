@@ -10,9 +10,9 @@ services:
     env_file: .env.example
     build:
       context: .
-      dockerfile: ./SQL_Docker/Dockerfile
+      dockerfile: ./postgres/Dockerfile
     volumes:
-      - ./SQL_Docker/*.sql /docker-entrypoint-initdb.d/
+      - ./postgres/*.sql /docker-entrypoint-initdb.d/
     ports:
       - "5432:5432"
 

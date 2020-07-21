@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
-    <file url="file://$PROJECT_DIR$/SQL_Docker/CreateDB.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/handlers/modify_db.go" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/postgres/CreateDB.sql" dialect="PostgreSQL" />
   </component>
 </project>
